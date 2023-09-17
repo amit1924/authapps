@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog Page</title>
+
+    <Style>
+        /* Style for the Recent Posts section */
+
+        .col-md-4 {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .col-md-4 h3 {
+            color: #fe104c;
+            font-size: 50px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .list-group-item {
+            border: none;
+            padding: 0;
+            margin: 0 0 20px;
+            overflow: hidden;
+            position: relative;
+            background-color: transparent;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .list-group-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            padding: 10px 0;
+            transition: color 0.2s ease-in-out;
+            font-size: 30px;
+        }
+
+        .list-group-item img {
+            max-width: 50%;
+            height: auto;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .list-group-item:hover {
+            transform: scale(1.02);
+        }
+
+        .list-group-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .list-group-item a:hover {
+            color: #0046f8;
+        }
+        li a:hover{
+            color: rgb(0, 17, 253);
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="col-md-4">
+        <nav>
+            <ul style="display: flex; gap: 20px;">
+                <li style="list-style: none;"><a href="./about.html" style="text-decoration: none; font-size: 20px;">About</a></li>
+                <li style="list-style: none;"><a href="./contact.html" style="text-decoration: none; font-size: 20px;">Contact</a></li>
+            </ul>
+        </nav>
+        <h3>Courses For Web Development</h3>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a href="https://youtu.be/zJSY8tbf_ys?si=mKYg2sVtdM7WIjK_" target="_blank">Full courses for
+                    frontend web development</a>
+                <br>
+
+                <img src="https://img.youtube.com/vi/zJSY8tbf_ys/maxresdefault.jpg" alt="Thumbnail">
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="https://youtu.be/nu_pCVPKzTk?si=kKzYQkypyCwuNB9X" target="_blank">Full courses for
+                    backend development</a>
+                <br>
+
+                <img src="https://img.youtube.com/vi/nu_pCVPKzTk/maxresdefault.jpg" alt="Thumbnail">
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="https://youtu.be/jwCmIBJ8Jtc?si=UUJ78LYrDBfTX67Q" target="_blank">Full Courses for
+                    Figma</a>
+                <br>
+
+                <img src="https://img.youtube.com/vi/jwCmIBJ8Jtc/maxresdefault.jpg" alt="Thumbnail">
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="https://youtu.be/xSUm6iMtREA?si=HgUwxnZIT9qUr4tJ" target="_blank">Django course For
+                    beginners</a>
+                <br>
+
+                <img src="https://img.youtube.com/vi/xSUm6iMtREA/maxresdefault.jpg" alt="Thumbnail">
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

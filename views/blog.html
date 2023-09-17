@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/styles.css"> <!-- Adjust the path if needed -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #f8f9fa;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .navbar-nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-item {
+            margin: 0 10px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .blog-post {
+            margin-bottom: 40px;
+        }
+
+        .blog-post img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a class="navbar-brand" href="/myBlog.html">My Blog</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+                 <a class="nav-link" href="/logout">Logout</a>
+                <!-- <button onclick="logout()">Logout</button>  -->
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Blog Content -->
+    <div id="blog" class="container mt-5">
+        <h1 class="text-center">Home Page</h1>
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="blog-post mb-4">
+                    <h2 class="blog-post-title">Frontend Development</h2>
+                    <p class="blog-post-meta">January 5, 2023 by <a
+                            href="https://www.knowledgehut.com/blog/web-development/front-end-development-frameworks"
+                            target="_blank">Knowledgehut</a></p>
+                    <p>Explore the latest trends and techniques in frontend development...</p>
+                    <img src="/assets/fr.png" alt="Frontend Development">
+                </div>
+
+                <div class="blog-post">
+                    <h2 class="blog-post-title">Backend Development</h2>
+                    <p class="blog-post-meta">January 10, 2023 by <a
+                            href="https://www.geeksforgeeks.org/why-to-use-node-js-for-backend-development/"
+                            target="_blank">Using Node Js</a></p>
+                    <p>Dive into the world of backend development and server-side technologies...</p>
+                    <img src="/assets/back.jpg" class="img-fluid" alt="Backend Development">
+                </div>
+
+                <div class="blog-post">
+                    <h2 class="blog-post-title">Web Design</h2>
+                    <p class="blog-post-meta">January 15, 2023 by <a
+                            href="https://blog.templatetoaster.com/best-responsive-web-design-frameworks/"
+                            target="_blank">Template Rosters</a></p>
+                    <p>Learn about the principles of web design and creating user-friendly interfaces...</p>
+                    <img src="/assets/web.png" class="img-fluid" alt="Web Design">
+                </div>
+
+                <div class="blog-post">
+                    <h2 class="blog-post-title">Python as a Backend</h2>
+                    <p class="blog-post-meta">January 20, 2023 by <a
+                            href="https://www.freecodecamp.org/news/backend-web-development-with-python-full-course/"
+                            target="_blank">FreeCodeCamp</a></p>
+                    <p>Discover how Python is used as a powerful backend language in web development...</p>
+                    <img src="/assets/py.jpg" class="img-fluid" alt="Python Backend">
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+    <script>
+        
+    // function logout() {
+    //     // Assuming you stored the JWT in localStorage
+    //     localStorage.removeItem('jwtToken');
+    //     // Redirect to the login page or perform any other desired action
+    //     window.location.href = '/login';
+    // }
+</script>
+    
+</body>
+
+</html>

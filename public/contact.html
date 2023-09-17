@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        .contact-form {
+            margin-top: 30px;
+        }
+
+        .form-control {
+            border-radius: 0;
+        }
+
+        .map-container {
+            height: 400px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container my-5">
+        <nav>
+            <ul>
+                <li style="list-style: none;"><a href="./myBlog.html" style="text-decoration: none; font-size: 20px;">My Blog</a></li>
+            </ul>
+        </nav>
+        <h1 class="text-center">Contact</h1>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Contact Information</h2>
+                <p>
+                    Feel free to reach out to us using the information below. We'd be happy to hear from you!
+                </p>
+
+                <p>
+                    Address: New Delhi, India <br>
+                    Phone: +918340616588<br>
+                    Email: amit192400@gmail.com
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <h2>Contact Form</h2>
+                <form class="contact-form">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Location</h2>
+                <div class="map-container">
+                    <!-- Add your map embed code here -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.89797036338!2d77.04417242604603!3d28.527554409017824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1694770794053!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link Bootstrap JS (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url("../assets/login.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h1>Login</h1>
+
+      <form action="/login" method="POST">
+        <input
+          type="text"
+          name="username"
+          placeholder="Username"
+          required
+        /><br />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        /><br />
+        <input type="submit" value="Login" />
+      </form>
+      <p>Don't have an account? <a href="/register">Register</a></p>
+    </div>
+    <!-- Add this block where you want to display the message -->
+<% if (typeof registrationMessage !== 'undefined' && registrationMessage) { %>
+  <script>
+      alert("<%= registrationMessage %>");
+  </script>
+<% } %>
+
+  </body>
+</html>
